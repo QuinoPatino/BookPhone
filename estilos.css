@@ -1,0 +1,236 @@
+body{
+  font-family: 'Raleway', sans-serif;
+  /* font-weight: bold; */
+  font-size: 20px;
+  background-color: #FFFFFF;
+  margin: 0px;
+}
+
+
+
+.cajita {
+  background-color: #F8F8F8;
+  margin: 0px 200px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+h1,
+h2,
+h3{
+  font-family: 'Roboto Mono';
+  font-weight: 500;
+}
+
+h2 {
+  font-weight:bold;
+  margin: 10px;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-size: 30px;
+  color: #3A518D;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+small {
+  font-weight: 50;
+  font-style: italic;
+}
+
+h1{
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  height: inherit;
+}
+
+.header li {
+  align-items: center;
+  height: inherit;
+}
+
+
+
+.header {
+  background-color: #3A518D;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.header nav {
+  height: inherit;
+  align-items: center;
+}
+
+.header a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Roboto Mono';
+  font-weight: 300;
+  display: flex;
+  align-items: inherit;
+  height: inherit;
+  padding: 0px 20px;
+}
+
+.header figure {
+  margin: 0;
+  display: flex;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 100px;
+}
+
+
+.Hero {
+  background-image: url("./Encabezado.jpg");
+  background-color: #3A518D;
+  background-size: 400px 310px;
+  /* height: 300px; */
+  background-repeat: no-repeat;
+  background-position-x: right;
+  margin-top: 0px;
+  display: flex;
+}
+
+.Hero h1{
+  margin-top: inherit;
+  margin-right: 450px;
+  padding-left: 50px;
+  padding-top: 55px;
+  padding-bottom: 40px;
+  color: #DCDCDC;
+  font-weight: 600;
+  align-items: center;
+}
+
+.Hero h1 strong {
+  color: white;
+}
+
+.Historia {
+  /* border: 1px solid grey; */
+  /* border-radius: 10px; */
+  margin: 20px 40px;
+  background-color: #ECECEC;
+}
+
+.Historia article {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Acompañante_Historia {
+  margin: 20px;
+}
+
+.Acompañante_Imagen {
+  border-radius: 20px;
+}
+
+.article_paragraph_1 {
+  padding-left: 40px;
+}
+
+.Eventos {
+  margin: 40px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.Cajota {
+  border-radius: 10px;
+  /* border: 1px solid grey; */
+  overflow: hidden;
+  display: flex;
+  width: 500px;
+  margin: 10px 40px;
+  background-color: #ECECEC;
+}
+
+.article_paragraph_2 {
+  margin: 20px 40px;
+  background-color: #F7F7F7;
+  margin: : 40px;
+  margin-top: -80px;
+  position: relative;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.Acompañantes_Eventos {
+  margin: 0px;
+  width: 440px;
+  height: 300px;
+}
+
+
+.Contactitos {
+  margin: 30px 40px;
+  padding: 25px;
+  padding-top: 20px;
+  padding-left: 15px;
+  background-color: #ECECEC;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+
+.container_redes {
+  display: flex;
+  margin-right: 70px;
+  padding-top: 20px
+}
+
+.Redes {
+  margin: 0px 10px
+}
+
+form {
+  margin-left: 35px;
+}
+
+footer {
+  border-top: 1px solid grey;
+  padding: 20px;
+  background-color: #3A518D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  color: white;
+  font-weight: bold;
+}
+
+.Social {
+  margin: 0px 6px;
+}
+
+.Terminantes {
+  font-style: normal;
+  font-size: 15px
+}
