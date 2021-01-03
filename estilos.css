@@ -1,18 +1,18 @@
 body{
   font-family: 'Raleway', sans-serif;
-  /* font-weight: bold; */
   font-size: 20px;
   background-color: #FFFFFF;
   margin: 0px;
+  zoom: 90%;
 }
 
 
 
 .cajita {
   background-color: #F8F8F8;
-  margin: 0px 200px;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  margin: 0 15%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 h1,
@@ -33,6 +33,7 @@ h2 {
 
 h3 {
   font-weight: 700;
+  font-size: 30px;
 }
 
 small {
@@ -62,9 +63,12 @@ ul {
   height: inherit;
 }
 
+/* header */
+
 .header li {
   align-items: center;
   height: inherit;
+  flex-wrap: wrap;
 }
 
 
@@ -96,18 +100,21 @@ ul {
 .header figure {
   margin: 0;
   display: flex;
-  margin-bottom: 10px;
-  padding-top: 10px;
-  margin-left: 10px;
-  margin-right: 100px;
+  margin-right: 20%;
+}
+.header figure img {
+  margin-bottom: 5%;
+  padding-top: 5%;
+  margin-left: 5%;
+
 }
 
+/* Hero */
 
 .Hero {
-  background-image: url("./Encabezado.jpg");
+  background-image: url("./Images/Encabezado.jpg");
   background-color: #3A518D;
-  background-size: 400px 310px;
-  /* height: 300px; */
+  background-size: 40% 100%;
   background-repeat: no-repeat;
   background-position-x: right;
   margin-top: 0px;
@@ -116,10 +123,11 @@ ul {
 
 .Hero h1{
   margin-top: inherit;
-  margin-right: 450px;
-  padding-left: 50px;
-  padding-top: 55px;
-  padding-bottom: 40px;
+  margin-right: 5%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 90% 90%;
   color: #DCDCDC;
   font-weight: 600;
   align-items: center;
@@ -130,8 +138,8 @@ ul {
 }
 
 .Historia {
-  /* border: 1px solid grey; */
-  /* border-radius: 10px; */
+  display:flex;
+  flex-wrap: wrap;
   margin: 20px 40px;
   background-color: #ECECEC;
 }
@@ -140,38 +148,46 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 5%;
 }
 
 .Acompañante_Historia {
-  margin: 20px;
+  margin: 5%;
+  width: 95%;
+  height: 95%;
 }
 
 .Acompañante_Imagen {
   border-radius: 20px;
+  width: inherit;
+  height: inherit;
 }
 
 .article_paragraph_1 {
   padding-left: 40px;
 }
 
+/* Eventos */
+
 .Eventos {
-  margin: 40px 40px;
+  background-color: #F9F9F9;
+  padding: 40px 40px;
   display: flex;
   justify-content: center;
 }
 
 .Cajota {
   border-radius: 10px;
-  /* border: 1px solid grey; */
   overflow: hidden;
   display: flex;
   width: 500px;
-  margin: 10px 40px;
+  margin: 5px 40px;
   background-color: #ECECEC;
 }
 
+
 .article_paragraph_2 {
-  margin: 20px 40px;
+  margin: 10% 20%;
   background-color: #F7F7F7;
   margin: : 40px;
   margin-top: -80px;
@@ -183,13 +199,19 @@ ul {
 
 .Acompañantes_Eventos {
   margin: 0px;
-  width: 440px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
 }
 
+.Terminantes {
+  font-style: normal;
+  font-size: 15px
+}
+
+/* Contactos */
 
 .Contactitos {
-  margin: 30px 40px;
+  margin: 30px 30px;
   padding: 25px;
   padding-top: 20px;
   padding-left: 15px;
@@ -197,8 +219,10 @@ ul {
   display:flex;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
+  height: 20%;
+  flex-wrap: wrap;
 }
+
 
 .container_redes {
   display: flex;
@@ -213,6 +237,8 @@ ul {
 form {
   margin-left: 35px;
 }
+
+/* Footer */
 
 footer {
   border-top: 1px solid grey;
@@ -230,7 +256,207 @@ footer {
   margin: 0px 6px;
 }
 
-.Terminantes {
-  font-style: normal;
-  font-size: 15px
+
+
+/* MediaQueries */
+
+
+
+@media screen and (max-width: 1024px){
+
+  body {
+    zoom: 90%;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .Hero {
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+
+  .Historia article {
+    display: block;
+  }
+
+  .Eventos {
+    display: block;
+  }
+
+  .Cajota {
+    width: auto;
+    margin: 10%;
+    margin-top: 5%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .cajita {
+    margin: 0 10%;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  h2 {
+    margin-left: 25px
+  }
+
+  .header {
+    display: block;
+    height: auto;
+  }
+
+  .header figure {
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .header figure img {
+    width: 170px;
+    text-align: center;
+    margin: 0;
+    padding: 25px 0;
+  }
+
+  .header ul {
+    display: initial;
+  }
+
+  .header ul li {
+    height: 40px;
+  }
+
+  .header a {
+    justify-content: center;
+  }
+
+  .Hero {
+    height: auto;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .Historia {
+  margin: 5%;
+  }
+
+
+  .Contactitos {
+    margin: 5%;
+    padding: 5%;
+    height: auto;
+  }
+}
+
+
+@media screen and (max-width: 480px){
+
+  body {
+    zoom: 125%
+  }
+
+  .cajita {
+    margin: 0 5%;
+  }
+
+  .header ul li {
+    height: 25px;
+  }
+
+  .header a{
+    font-size: 15px;
+  }
+
+  .header figure img {
+    padding: 2%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .Hero {
+    background-attachment: local;
+    background-size: 100%;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .Terminantes {
+    font-size: 10px;
+  }
+
+  .Eventos {
+    padding: 8px;
+  }
+
+  .article_paragraph_1 {
+    padding-left: 5px;
+  }
+
+  .titulos_secundarios {
+    font-size: 18px;
+  }
+
+  .article_paragraph_3 {
+    font-size: 10px;
+  }
+
+  form {
+    margin-left: 0;
+  }
+
+  .container_redes {
+    margin-left: 0;
+  }
+
+  .Redes {
+    width: 40px;
+    height: 40px;
+  }
+
+  Footer {
+    padding: 10px;
+  }
+
+  .Social {
+    margin: 4px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .Footer p {
+    10px
+  }
+}
+
+@media screen and (max-width: 320px){
+  .cajita {
+    margin: 0;
+  }
 }
