@@ -15,18 +15,19 @@
     <!-- Esto es cabezera -->
 
     <header class="header">
-        <figure>
+      <i class="icon-menu burger_buttom"></i>
+      <figure>
           <img class="logotipo" src="./Logotipo.png" alt="Logotipo" width="90%" height="70%">
-        </figure>
-        <nav class="menu">
+      </figure>
+      <nav class="menu">
         <ul class="lista">
-          <li>
+          <li class="li">
             <a class="link" href="#Historia">Historia</a>
           </li>
-          <li>
+          <li class="li">
             <a class="link" href="#Eventos">Eventos</a>
           </li>
-          <li>
+          <li class="li">
             <a class="link" href="#Contacto">Contactanos</a>
           </li>
         </ul>
@@ -106,7 +107,7 @@
 
         <!-- Esto es Contactos -->
 
-        <section class="Contactanos">
+        <section id="Contacto"class="Contactanos">
           <h2>CONTACTOS</h2>
           <div class="Contactitos">
             <form>
@@ -134,6 +135,23 @@
           <a href="https://www.google.com/intl/es/gmail/about/"><img src="./Gmail.png" width="45px" height="45px" class="Social"></a>
         </figure>
       </footer>
+
+      <script type="text/javascript">
+
+        const menu = document.querySelector('.menu')
+        const boton = document.querySelector('.icon-menu')
+        boton.addEventListener('click', hideShow)
+
+        function hideShow() {
+          if (menu.classList.contains('is-active')) {
+            menu.classList.remove('is-active')
+          }else {
+            menu.classList.add('is-active')
+          }
+
+        }
+
+      </script>
 
 
   </body>
