@@ -1,3 +1,36 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icomoon.eot?w0smsg');
+  src:  url('icomoon.eot?w0smsg#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?w0smsg') format('truetype'),
+    url('icomoon.woff?w0smsg') format('woff'),
+    url('icomoon.svg?w0smsg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+
+
 body{
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
@@ -11,7 +44,7 @@ body{
 .cajita {
   background-color: #F8F8F8;
   margin: 0 15%;
-  padding-top: 1%;
+  padding-top: 10%;
   padding-bottom: 1%;
 }
 
@@ -71,7 +104,19 @@ ul {
   flex-wrap: wrap;
 }
 
-
+.burger_buttom {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  left: 5px;
+  top: 12px;
+  color: #F1F1F1;
+  background-color: rgb(0, 0, 0, 0.2);
+}
 
 .header {
   background-color: #3A518D;
@@ -79,6 +124,9 @@ ul {
   display: flex;
   justify-content: space-between;
   height: 90px;
+  width: 110vw;
+  position: fixed;
+  z-index: 2;
 }
 
 .header nav {
@@ -183,6 +231,8 @@ ul {
   width: 500px;
   margin: 5px 40px;
   background-color: #ECECEC;
+  z-index: 1;
+
 }
 
 
@@ -293,11 +343,47 @@ footer {
 
 }
 
+@media screen and (max-width: 767px) {
+
+  .burger_buttom {
+    display: block;
+    z-index: 4;
+  }
+
+  .header {
+    width: 115vw;
+  }
+
+  .menu.is-active {
+    left:0;
+  }
+  .menu {
+    position: fixed;
+    background: rgb(58, 81, 141, 0.98);
+    top:0;
+    left: -115vw;
+    bottom: 0;
+    width: inherit;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+
+
+  .menu ul {
+    width: inherit;
+    height: auto;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
 
-
   .cajita {
-    margin: 0 10%;
+    padding-top: 2%;
+    margin: 0 5%;
   }
 
   p {
@@ -311,6 +397,7 @@ footer {
   .header {
     display: block;
     height: auto;
+    position: static;
   }
 
   .header figure {
@@ -319,11 +406,18 @@ footer {
     text-align: center;
   }
 
+  .header a {
+    font-size: 30px;
+    justify-content: center;
+    padding: 0;
+    margin-right: 0;
+    margin: 1% 0;
+  }
   .header figure img {
     width: 170px;
     text-align: center;
     margin: 0;
-    padding: 25px 0;
+    padding: 15px 0;
   }
 
   .header ul {
@@ -334,9 +428,6 @@ footer {
     height: 40px;
   }
 
-  .header a {
-    justify-content: center;
-  }
 
   .Hero {
     height: auto;
@@ -360,6 +451,14 @@ footer {
 
 
 @media screen and (max-width: 480px){
+
+  .header {
+    width: 80vw;
+  }
+
+  .header a {
+    margin-right: 0;
+  }
 
   body {
     zoom: 125%
@@ -442,6 +541,7 @@ footer {
 
   Footer {
     padding: 10px;
+    width: 80vw;
   }
 
   .Social {
